@@ -42,7 +42,7 @@ function qwertyToColemakDHM(k) {
     "l": "i",
     ";": "o"
   }
-  return data[k];
+  return data[k] || k;
 }
 
 
