@@ -1,5 +1,11 @@
 var data = {};
-data.chars = " ntesiroamgjdlpufywqbkvhcxz1234567890'\",.!?:;/@$%&#*()_ABCDEFGHIJKLMNOPQRSTUVWXYZ~+-={}|^<>`[]\\";
+opts = [
+  " ntesiroamgjblpufywqdkvhcxz",
+  " tnseriaogmbjlpfuwydqvkchzx",
+  " aorisetnbjgmlpufywqdkvhcxz",
+  " oairesntjbmgplfuwydqvkchzx"
+];
+data.chars = opts[Math.floor(Math.random() * opts.length)];
 data.consecutive = 10;
 data.word_length = 7;
 
