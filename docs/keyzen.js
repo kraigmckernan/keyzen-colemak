@@ -19,7 +19,10 @@ $(document).ready(function() {
 function set_level(l) {
     data.in_a_row = {};
     for(var i = 0; i < data.chars.length; i++) {
-        data.in_a_row[data.chars[i]] = data.consecutive;
+        if (i < l)
+          data.in_a_row[data.chars[i]] = data.consecutive / 2;
+        else
+          data.in_a_row[data.chars[i]] = data.consecutive;
     }
     data.in_a_row[data.chars[l]] = 0;
     data.level = l;
