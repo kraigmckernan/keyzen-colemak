@@ -5,13 +5,13 @@ data.word_length = 7;
 
 
 $(document).ready(function() {
-    if (localStorage.data != undefined) {
-        load();
-        render();
-    }
-    else {
+    //if (localStorage.data != undefined) {
+    //    load();
+    //    render();
+    //}
+    //else {
         set_level(1);
-    }
+    //}
     $(document).keypress(keyHandler);
 });
 
@@ -69,8 +69,6 @@ function qwertyToColemakDHM(k) {
 
 function keyHandler(e) {
     var key = qwertyToColemakDHM(String.fromCharCode(e.which));
-    console.log(e.which);
-    console.log(key);
     e.preventDefault();
     data.keys_hit += key;
     if(key == data.word[data.word_index]) {
