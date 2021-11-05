@@ -1,3 +1,8 @@
+My Fork modifications
+=====
+
+I adjusted this in a hacky way to emulate the colemak layout I will be using soon next week. I also adjusted the letter levels to better match colemak dhm
+
 Keyzen - Colemak Edition
 ========================
 
