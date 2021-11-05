@@ -1,5 +1,5 @@
 var data = {};
-data.chars = " ntesiroahdjglpufywqbkvmcxz1234567890'\",.!?:;/@$%&#*()_ABCDEFGHIJKLMNOPQRSTUVWXYZ~+-={}|^<>`[]\\";
+data.chars = " ntesiroamgjdlpufywqbkvhcxz1234567890'\",.!?:;/@$%&#*()_ABCDEFGHIJKLMNOPQRSTUVWXYZ~+-={}|^<>`[]\\";
 data.consecutive = 10;
 data.word_length = 7;
 
@@ -31,9 +31,23 @@ function set_level(l) {
     render();
 }
 
+function qwertyToColemakDHM(k) {
+  var data = {
+    "a": "a",
+    "s": "r",
+    "d": "s",
+    "f": "t",
+    "j": "n",
+    "k": "e",
+    "l": "i",
+    ";": "o"
+  }
+  return data[k];
+}
+
 
 function keyHandler(e) {
-    var key = String.fromCharCode(e.which);
+    var key = qwertyToColemakDHM(String.fromCharCode(e.which));
     if (data.chars.indexOf(key) > -1){
         e.preventDefault();
     }
