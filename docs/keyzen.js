@@ -20,7 +20,7 @@ function set_level(l) {
     data.in_a_row = {};
     for(var i = 0; i < data.chars.length; i++) {
         if (i < l)
-          data.in_a_row[data.chars[i]] = data.consecutive / 2;
+          data.in_a_row[data.chars[i]] = 3 * data.consecutive / 2;
         else
           data.in_a_row[data.chars[i]] = data.consecutive;
     }
