@@ -40,7 +40,28 @@ function qwertyToColemakDHM(k) {
     "j": "n",
     "k": "e",
     "l": "i",
-    ";": "o"
+    ";": "o",
+    "g": "g",
+    "h": "m",
+
+    "q": "q",
+    "w": "w",
+    "e": "f",
+    "r": "p",
+    "t": "b",
+    "y": "j",
+    "u": "l",
+    "i": "u",
+    "o": "y",
+    "p": ";",
+
+    "z": "z",
+    "x": "x",
+    "c": "c",
+    "v": "d",
+    "b": "v",
+    "n": "k",
+    "m": "h"
   }
   return data[k] || k;
 }
