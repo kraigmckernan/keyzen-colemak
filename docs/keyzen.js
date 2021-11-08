@@ -77,7 +77,7 @@ function qwertyToColemakDHM(k) {
 
 
 function keyHandler(e) {
-    var key = qwertyToColemakDHM(String.fromCharCode(e.which));
+    var key = String.fromCharCode(e.which);
     e.preventDefault();
     data.keys_hit += key;
     if(key == data.word[data.word_index]) {
